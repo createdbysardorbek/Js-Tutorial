@@ -7,3 +7,7 @@ if (userEnteredNumLength == 16 && +userCardNum) {
 } else {
     alert('Karta raqami kiritishda xatolik bor!');
 }
+
+function sayHi() {
+    alert('Hi from Git!');
+}
