@@ -1,5 +1,4 @@
 let numberOfFilms = prompt("How many films have you seen?");
-let turnInto = +numberOfFilms;
 let lastFilm = prompt("The last film you have seen?");
 let markForMovie = prompt("How would you marked it?(from 1 to 10)");
 let personalMovieDB = {
