@@ -8,9 +8,9 @@ let movieDb = () => {
         private: false,
     }
 
-    if (personalMovieDB.count < 10) {
+    if (personalMovieDB.count <= 10) {
         console.log("You are not very fond of films!");
-    } else if (personalMovieDB.count < 30) {
+    } else if (personalMovieDB.count <= 30) {
         console.log("You are classic spectator!");
     } else if (personalMovieDB.count > 30) {
         console.log("You are fan of films!");
