@@ -30,7 +30,7 @@ let movieDb = () => {
             i++;
         }
     }
-    document.write(personalMovieDB.movies);
+    console.log(personalMovieDB.movies);
 }
 
 movieDb();
