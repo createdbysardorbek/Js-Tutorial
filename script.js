@@ -1,5 +1,5 @@
 // let userCardNum = prompt('Karta raqamini kiriting:');
-// // let userCardNumber = +userCardNum;
+// let userCardNumber = +userCardNum;
 // let userEnteredNumLength = userCardNum.length;
 
 // if (userEnteredNumLength == 16 && +userCardNum) {
