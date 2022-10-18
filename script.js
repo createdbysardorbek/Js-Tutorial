@@ -17,3 +17,11 @@
 
 // console.log(age);
 // let age = 17;
+
+// function toBinary(n) {
+//     let b = n.toString(2);
+//     return b;
+// }
+
+// let resulr = toBinary(5);
+// alert(resulr);
