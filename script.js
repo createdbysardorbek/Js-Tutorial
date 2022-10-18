@@ -61,3 +61,12 @@ const colors = ["black", "blue", "green", [], 10, 13, {}];
 // favoriteColor[1] = prompt('Your favorite color #2', '');
 // favoriteColor[2] = prompt('Your favorite color #3', '');
 // console.log(favoriteColor);
+
+// Interpolyatsiya
+// const channel = prompt('Who is your favourite youtuber?');
+// console.log(`https://youtube.com/${channel}`);
+
+// const userName2 = 'Sardor';
+// const job = "JavaScript developer";
+// console.log(`User name is ${userName2}, he is ${job}`);
+
