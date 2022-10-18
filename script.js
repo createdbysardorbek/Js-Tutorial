@@ -1,28 +1,10 @@
-// let userCardNum = prompt('Karta raqamini kiriting:');
-// let userCardNumber = +userCardNum;
-// let userEnteredNumLength = userCardNum.length;
-
-// if (userEnteredNumLength == 16 && +userCardNum) {
-//     alert('Karta raqamingiz qabul qilindi!');
-// } else {
-//     alert('Karta raqami kiritishda xatolik bor!');
-// }
-
-
-// const myName = {
-//     name: "Yusuf",
-// }
-// myName.name = "Sardor";
-// console.log(myName);
-
-// console.log(age);
-// let age = 17;
-
-// function toBinary(n) {
-//     let b = n.toString(2);
-//     return b;
-// }
-
-// let resulr = toBinary(5);
-// alert(resulr);
+const uzcardnumber = (num) => {
+    if (num.length > 16 || isNaN(+num) || !num.startsWith(8600) || num.includes(' ')) {
+        console.log("Invalid card number!");
+    } else {
+        let num2 = num.slice(4, 12);
+        console.log(num.replace(`${num2}`, ' ******** '));
+    }
+}
+uzcardnumber('8600323454567674');
 
