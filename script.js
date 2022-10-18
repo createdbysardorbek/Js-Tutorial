@@ -25,3 +25,4 @@
 
 // let resulr = toBinary(5);
 // alert(resulr);
+
