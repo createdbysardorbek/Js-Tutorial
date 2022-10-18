@@ -1,2 +1,4 @@
-let a = 5;
-console.log(a);
+"use strict";
+
+number = 10;
+console.log(number);
