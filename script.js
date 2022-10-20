@@ -4,7 +4,15 @@ for (let i = 0; i < footballPlayers.length; i++) { console.log(`${i + 1}.${footb
 
 // Homework - 2
 let arr = ["Iphone", "Samsung", "Redmi", "Xiaomi", "Nokia"];
-function arrPush(item) { arr[(arr.length - 1) + 1] = item; console.log(arr); } arrPush("Samsung");
+function arrPush(item) {
+    arr[(arr.length - 1) + 1] = item;
+}
+arrPush("Novey");
 
 // Homework - 3
-function arrPop() { arr.splice(arr.length - 1); console.log(arr); } arrPop();
+function arrPop() {
+    arr.splice(arr.length - 1);
+}
+arrPop();
+
+console.log(arr);
