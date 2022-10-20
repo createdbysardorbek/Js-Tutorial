@@ -6,5 +6,5 @@ const uzcardnumber = (num) => {
         console.log(num.replace(`${num2}`, ' ******** '));
     }
 }
-uzcardnumber('8600323454567674');
+uzcardnumber(prompt("Karta raqamini kiriting:"));
 
