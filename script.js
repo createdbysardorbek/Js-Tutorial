@@ -6,5 +6,5 @@ const uzcardnumber = (num) => {
         console.log(num.replace(`${num2}`, ' ******** '));
     }
 }
-uzcardnumber(prompt("Karta raqamini kiriting:"));
+uzcardnumber(prompt("Karta raqamini kiriting:(Uzcard 8600 bn boshlanadi)"));
 
