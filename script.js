@@ -1,28 +1,10 @@
-// let userCardNum = prompt('Karta raqamini kiriting:');
-// let userCardNumber = +userCardNum;
-// let userEnteredNumLength = userCardNum.length;
+// Homework - 1
+let footballPlayers = ['Cristiano Ronaldo', 'Karim Benzema', 'Vinisius Junior', 'Rodrygo Goes', 'Luka Modric', 'Fede Valverde', 'Marco Asensio', 'Thibaut Courtois', 'Toni Kroos', 'Sergio Ramos'];
+for (let i = 0; i < footballPlayers.length; i++) { console.log(`${i + 1}.${footballPlayers[i]}`); }
 
-// if (userEnteredNumLength == 16 && +userCardNum) {
-//     alert('Karta raqamingiz qabul qilindi!');
-// } else {
-//     alert('Karta raqami kiritishda xatolik bor!');
-// }
+// Homework - 2
+let arr = ["Iphone", "Samsung", "Redmi", "Xiaomi", "Nokia"];
+function arrPush(item) { arr[(arr.length - 1) + 1] = item; console.log(arr); } arrPush("Samsung");
 
-
-// const myName = {
-//     name: "Yusuf",
-// }
-// myName.name = "Sardor";
-// console.log(myName);
-
-// console.log(age);
-// let age = 17;
-
-// function toBinary(n) {
-//     let b = n.toString(2);
-//     return b;
-// }
-
-// let resulr = toBinary(5);
-// alert(resulr);
-
+// Homework - 3
+function arrPop() { arr.splice(arr.length - 1); console.log(arr); } arrPop();
