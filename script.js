@@ -70,3 +70,34 @@ const colors = ["black", "blue", "green", [], 10, 13, {}];
 // const job = "JavaScript developer";
 // console.log(`User name is ${userName2}, he is ${job}`);
 
+//Operatorlar
+// console.log(6 + '9');
+
+
+// ! Increment, decrement
+let incr = 10;
+let decr = 10;
+// console.log(++incr);
+// console.log(--decr);
+// console.log(++incr);
+// console.log(--decr);
+// console.log(++incr);
+// console.log(--decr);
+
+// * % - sign
+// console.log(4 % 1);
+
+// ! - Tenglashtirish ==
+// console.log(5 * 5 == 22);
+
+// Tekshirish ===
+// console.log(5 * 5 === '25');
+
+// ! && - va || - yoki
+const isAge = true;
+const isClosed = true;
+const isMale = false;
+// console.log(isAge ||/*(&&)*/ isClosed ||/*(&&)*/ isMale);
+
+// ! - teskari ! operator
+//console.log(isAge && isClosed && !isMale); // ! true qaytaradi
