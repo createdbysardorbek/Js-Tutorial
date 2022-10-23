@@ -22,17 +22,23 @@
 let str = prompt("Enter the string:", "");
 let count = 0;
 let count2 = 0;
+let count3 = 0;
 function strCheck(str2) {
+    str2.toLowerCase;
     let newStr = [...str2];
     for (let i = 0; i < newStr.length; i++) {
         if (newStr[i] === "x") {
             count++;
-        } else if (newStr[i] === "o" || newStr[i] === '0') {
+        } else if (newStr[i] == "o" || newStr[i] === '0') {
             count2++;
+        } else {
+            count3++;
         }
     }
     if (count === count2) {
         console.log("True");
+    } else if (count3 > 0) {
+        console.log("Flase");
     } else {
         console.log("False");
     }
