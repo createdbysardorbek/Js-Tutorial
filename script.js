@@ -17,38 +17,23 @@
 
 // console.log(arr);
 
-// #4
-
-for (let i = 0; i < 1; i++) {
-    let str = prompt("Enter the string:", "");
-    if (str === '' || str === null || str.includes(' ')) {
-        i--;
+// * #4
+let str = prompt("Enter the string:", "");
+let countFor0 = 0,
+    countForX = 0;
+function checkStr(stringVar) {
+    let turnedIntoMas = [...stringVar];
+    for (let i = 0; i < turnedIntoMas.length; i++) {
+        if (stringVar[i] === '0' || stringVar[i] === 'o') { countFor0++; }
+        else if (stringVar[i] === 'x') { countForX++; }
+    }
+    if ((countFor0 !== countForX) || (countFor0 === 0 && countForX === 0)) {
+        console.log("False!");
     } else {
-        function strCheck(str2) {
-            let count = 0,
-                count2 = 0,
-                count3 = 0;
-            str2.toLowerCase;
-            let newStr = [...str2];
-            for (let i = 0; i < newStr.length; i++) {
-                if (newStr[i] === "x") {
-                    count++;
-                } else if (newStr[i] == "o" || newStr[i] === '0') {
-                    count2++;
-                } else {
-                    count3++;
-                }
-            }
-            if (count !== count2) {
-                console.log("False");
-            } else if (count3 > 0) {
-                console.log("False");
-            } else {
-                console.log("True");
-            }
-        }
-
-        strCheck(str);
+        console.log("True!");
     }
 }
+checkStr(str);
+
+// !5
 
