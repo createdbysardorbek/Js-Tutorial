@@ -17,7 +17,7 @@
 
 // console.log(arr);
 
-// * #4
+// ! #4
 let str = prompt("Enter the string:", "");
 let countFor0 = 0,
     countForX = 0;
@@ -36,4 +36,13 @@ function checkStr(stringVar) {
 checkStr(str);
 
 // !5
+
+let userStr = prompt("Enter the string:", "");
+let output = '';
+for (let i = 0; i < userStr.length; i++) {
+    if (!output.includes(userStr[i])) {
+        output = output + userStr[i];
+    }
+}
+console.log(output);
 
