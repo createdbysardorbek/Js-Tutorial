@@ -19,12 +19,13 @@
 
 // ! #4
 let str = prompt("Enter the string:", "");
+let str2 = str.toLowerCase();
 let countFor0 = 0,
     countForX = 0;
 function checkStr(stringVar) {
     let turnedIntoMas = [...stringVar];
     for (let i = 0; i < turnedIntoMas.length; i++) {
-        if (stringVar[i] === '0' || stringVar[i] === 'o') { countFor0++; }
+        if (stringVar[i] === 'o') { countFor0++; }
         else if (stringVar[i] === 'x') { countForX++; }
     }
     if ((countFor0 !== countForX) || (countFor0 === 0 && countForX === 0)) {
@@ -33,16 +34,15 @@ function checkStr(stringVar) {
         console.log("True!");
     }
 }
-checkStr(str);
+checkStr(str2);
 
 // !5
-
 let userStr = prompt("Enter the string:", "");
-let output = '';
+let outStr = '';
 for (let i = 0; i < userStr.length; i++) {
-    if (!output.includes(userStr[i])) {
-        output = output + userStr[i];
+    if (!outStr.includes(userStr[i])) {
+        outStr = outStr + userStr[i];
     }
 }
-console.log(output);
+console.log(outStr);
 
