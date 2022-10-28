@@ -26,3 +26,27 @@
 // let resulr = toBinary(5);
 // alert(resulr);
 
+// ! Function Declaration
+// function plus(son1, son2) {
+//     console.log(son1 + son2);
+//     return son1 + son2 + 10;
+// }
+// const func = plus;
+// console.log(func(1, 1));
+
+// ! Function Expression
+// const sayHi = function (age) {
+//     console.log(`Your age is ${age}`);
+//     return age;
+// }
+// let var2 = sayHi;
+// console.log(var2(1));
+
+// ! Arrow Function
+// const sayHi = str => {
+//     console.log(str)
+//     return 0
+// };
+// let const2 = sayHi();
+//  sayHi("Hello World")
+// console.log(const2);
