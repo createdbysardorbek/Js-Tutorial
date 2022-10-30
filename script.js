@@ -50,3 +50,68 @@
 // let const2 = sayHi();
 //  sayHi("Hello World")
 // console.log(const2);
+
+// const var2 = null;
+// console.log(null === null);
+
+// let person = {
+//     name: "Sardor",
+//     age: 17,
+// }
+
+// let occupation = {
+//     name: "Bilol",
+//     job: "Programmer",
+// }
+// let fromEntries = Object.fromEntries([['x', 15], ['y', 10]]);
+// console.log(fromEntries);
+// let person2 = Object.assign({}, occupation, person, fromEntries);
+// console.log(person2 === occupation);
+// person2.job = "Frontend Developer";
+// console.log(person2);
+// console.log(occupation);
+
+// let objectKeys = Object.keys(person2);
+// console.log(objectKeys);
+// let values = Object.values(person2);
+// console.log(values);
+// let entries = Object.entries(person2);
+// console.log(entries);
+// let fromEntries2 = Object.fromEntries(entries);
+// console.log(fromEntries2);
+
+// let x = ''.split('');
+// let arr = confirm();
+// console.log(arr);
+
+// let obyekt = Object.create(person, { a: "Samar" });
+// console.log(obyekt);
+
+// let x = '9';
+// let y = '2';
+// console.log(Number(x) + Number(y));
+// console.log(Number(NaN));
+// console.log(Boolean(NaN));
+// a = 0;
+// b = 0;
+// result = (a !== null && a !== undefined) ? a : b;
+// console.log(result);
+// let res;
+// console.log(res);
+
+// let array = [1, 2, 3, 4, 5];
+// let array2 = array.findIndex((item) => {
+//     return item == 1;
+// });
+// console.log(array2);
+
+// let str = 'Hello\nWorld';
+// let str2 = str.split(' ');
+// console.log(str2);
+// console.log(str2.join(''));
+// console.log(Array.isArray(str2));
+// console.log(str);
+// let num = 1.05 + Number.EPSILON;
+// console.log(isFinite(1.5));
+// console.log(parseInt('12Hello World 12'));
+// console.log(parseFloat('12.19Hello World 12'));
