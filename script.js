@@ -115,3 +115,83 @@
 // console.log(isFinite(1.5));
 // console.log(parseInt('12Hello World 12'));
 // console.log(parseFloat('12.19Hello World 12'));
+
+// ! DOM
+
+//let width = window.innerHeight; // ! brauzer width | height
+//console.log(width);
+//console.log(navigator.userAgent); // ! brauzer haqida
+//console.log(navigator.platform);
+//console.log(location.href); // ! brauzer ssilkasi
+
+// let html = document.documentElement;
+// console.log(html);
+// let body = document.body;
+// console.log(body);
+// let head = document.head;
+// console.log(head);
+
+// ! Codewars * Simple string characters
+
+// let s = "aRdoR12345#%^";
+// function solve(s) {
+//     let upperCase = 0;
+//     let lowerCase = 0;
+//     let numbers = 0;
+//     let specialCharacter = 0;
+//     s.split('').forEach(letter => {
+//         if (/[A-Z]/.test(letter)) {
+//             upperCase++;
+//         } else if (/[a-z]/.test(letter)) {
+//             lowerCase++;
+//         } else if (/[0-9]/.test(letter)) {
+//             numbers++;
+//         } else {
+//             specialCharacter++;
+//         }
+//     });
+
+//     return [upperCase, lowerCase, numbers, specialCharacter];
+// }
+
+// console.log(solve(s));
+
+// ! Codewars * Fix My Phone Numbers!
+
+// let str3 = "fdgf64574575dfhd";
+// function isItANum(str) {
+//     let str2 = '';
+//     str.split('').forEach(letter => {
+//         if (/[0-9]/.test(letter)) {
+//             str2 += letter;
+//         }
+//     })
+
+//     if (str2.startsWith('0') && str2.length == 11) {
+//         return str2;
+//     } else {
+//         return "Not a phone number";
+
+//     }
+// }
+
+// console.log(isItANum(str3));
+
+// ! Codewars * Are the numbers in order?
+
+// let arr2 = [1, 2, 4, 7, 19];
+// function inAscOrder(arr) {
+//     let arr3 = []
+//     arr.forEach(element => {
+//         return arr3.push(element)
+//     });
+//     console.log(arr);
+//     console.log(arr3);
+//     arr3 = arr3.sort((a, b) => a - b)
+//     if (arr.join('') === arr3.join('')) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(inAscOrder(arr2));
