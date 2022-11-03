@@ -195,3 +195,98 @@
 //     }
 // }
 // console.log(inAscOrder(arr2));
+
+// ! Codewars * Break camelCase
+
+// complete the function
+// let str = 'camelCase'
+// function solution(string) {
+//     let newString = '';
+//     for (letter of string) {
+//         if (letter == letter.toUpperCase()) {
+//             newString += ` ${letter}`;
+//         } else {
+//             newString += letter;
+//         }
+//     }
+//     return newString;
+// }
+// console.log(solution(str));
+
+// ! Exam
+
+// let arr = ['1', '2', '3', '4', '5'].map(parseInt);
+// console.log(arr);
+
+// ! DOM
+
+// * Adding classes to HTML tags
+
+// let h1 = document.querySelector('.header');
+// let newClass = h1.classList;
+// newClass.remove('header');
+// newClass.add('header1');
+// newClass.toggle('header');
+
+// * Selecting HTML elements
+
+// ! Selecting by class returns array if items more than one
+// ! You CANNOT use forEach, map, reduce, filter methods for this type of Array
+
+// let paragraph = document.getElementsByClassName('paragraph');
+// console.log(paragraph);
+// let newArr = [];
+// for (let i = 0; i < paragraph.length; i++) {
+//     newArr.push(paragraph[i]);
+// }
+// console.log(newArr);
+
+// ! Changing element in HTML
+
+// let str = document.getElementById('header2').innerHTML = 'Sardorbek Ahadilloyev future Backend Developer';
+
+// ! Selecting id from HTML it return not an array because id is unique
+
+// let id = document.getElementById('header2');
+// console.log(id);
+
+// ! Selecting by method querySelector and querySelectorAll
+// * We should select like in * CSS
+
+// ! querySelector * this method will return first faced element not all in array
+
+// let paragraphs = document.querySelector('.paragraph');
+// console.log(paragraphs); // ! not array
+
+// * querySelectorAll * you can use simple array methods
+
+// let paragraphs = document.querySelectorAll('.paragraph');
+// console.log(paragraphs); // ! this returns an array
+
+// * Exampel of * changing texts in HTML page
+
+// let text = document.getElementById('header2').innerText = 'Hello World',
+//     text2 = document.getElementsByClassName('header');
+// text2[0].innerText = 'Changed with JavaScript!';
+
+// * Exampel of * changing texts in HTML page
+
+// let userInfo = prompt('Enter your name:', '');
+// let text = document.getElementById('header2').innerText = `${userInfo} hi from JavaScript`;
+
+// ! That's crazy! 😱
+
+// let rimNum = 'X';
+// function checkRomeNums(reimNum) {
+//     let rimObj = {
+//         'I': 1,
+//         'v': 5,
+//         'X': 10,
+//         'L': 50,
+//         'C': 100,
+//         'D': 500,
+//         'M': 1000,
+//     }
+//     let str = reimNum.split()
+// }
+// console.log(checkRomeNums(rimNum));
