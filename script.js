@@ -290,3 +290,126 @@
 //     let str = reimNum.split()
 // }
 // console.log(checkRomeNums(rimNum));
+
+// ! Exercise
+
+// let weeks = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+// let promptUser = prompt('Enter week day:');
+// console.log(weeks[promptUser]);
+
+// ! Homework * Making div
+
+// let newDiv = document.createElement('div');
+// let width = document.querySelector('.width');
+// let height = document.querySelector('.height');
+// let borderRadius = document.querySelector('.borderRadius');
+// let background = document.querySelector('.background');
+// let btn = document.querySelector('button');
+// btn.style.cssText = `
+//     width: 150px;
+//     padding: 15px 20px;
+//     box-sizing: border-box;
+//     background: aqua;
+//     font-size: 24px;
+//     color: red;
+//     cursor: pointer;
+//     border-radius: 20px;
+//     outline: 0;
+//     border: 0;
+// `;
+
+// btn.addEventListener('mouseover', (e) => {
+//     e.target.style.cssText = `
+//         width: 150px;
+//         padding: 15px 20px;
+//         box-sizing: border-box;
+//         background: red;
+//         font-size: 24px;
+//         color: aqua;
+//         cursor: pointer;
+//         border-radius: 20px;
+//         outline: 0;
+//         border: 0;
+//     `;
+// });
+
+// btn.addEventListener('mouseout', (e) => {
+//     e.target.style.cssText = `
+//         width: 150px;
+//         padding: 15px 20px;
+//         box-sizing: border-box;
+//         background: aqua;
+//         font-size: 24px;
+//         color: red;
+//         cursor: pointer;
+//         border-radius: 20px;
+//         outline: 0;
+//         border: 0;
+//         margin-bottom: 10px;
+//     `;
+// });
+
+// let inputs = document.querySelectorAll('input');
+// inputs.forEach(elem => {
+//     elem.style.cssText = `
+//     display: block;
+//     width: 150px;
+//     padding: 15px 20px;
+//     font-size: 18px;
+//     border: 0;
+//     outline: 0;
+//     background: aqua;
+//     border-radius: 20px;
+//     margin-bottom: 10px;
+// `;
+// });
+
+// let labels = document.querySelectorAll('label');
+// labels.forEach(elem => {
+//     elem.style.cssText = `
+//         display:block;
+//         font-size: 18px;
+//         font-weight: 700;
+//         margin-bottom: 10px;
+//     `;
+// })
+
+
+
+// btn.addEventListener('click', () => {
+//     if ((parseInt(width.value) >= 0 && parseInt(height.value) >= 0 && parseInt(borderRadius.value) >= 0) && (width.value !== '' && height.value !== '' && borderRadius.value !== '' && background.value !== '') && (width.value.endsWith('px') || width.value.endsWith('rem') || width.value.endsWith('%')) && (height.value.endsWith('px') || height.value.endsWith('rem') || height.value.endsWith('%')) && (borderRadius.value.endsWith('px') || borderRadius.value.endsWith('rem') || borderRadius.value.endsWith('%'))) {
+//         newDiv.style.cssText = `
+//         width: ${width.value};
+//         height: ${height.value};
+//         border-radius: ${borderRadius.value};
+//         background-color: ${background.value};
+//     `;
+//         btn.after(newDiv);
+//     } else {
+//         alert('Fail! Please, enter correct values!');
+//     }
+// });
+
+// ! Modal
+
+let btn = document.querySelector('button');
+let modal = document.querySelector('.modal');
+let btn2 = document.querySelector('.modal .modal__content form button');
+let close = document.querySelector('.close');
+
+btn.addEventListener('click', () => {
+    modal.classList.remove('hide');
+    modal.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+    modal.classList.remove('show');
+    modal.classList.add('hide');
+})
+
+modal.addEventListener('click', (event) => {
+    if (event.target.classList.contains('modal')) {
+        modal.classList.remove('show');
+        modal.classList.add('hide');
+    }
+})
