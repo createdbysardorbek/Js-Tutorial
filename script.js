@@ -392,24 +392,24 @@
 
 // ! Modal
 
-let btn = document.querySelector('button');
-let modal = document.querySelector('.modal');
-let btn2 = document.querySelector('.modal .modal__content form button');
-let close = document.querySelector('.close');
+// let btn = document.querySelector('button');
+// let modal = document.querySelector('.modal');
+// let btn2 = document.querySelector('.modal .modal__content form button');
+// let close = document.querySelector('.close');
 
-btn.addEventListener('click', () => {
-    modal.classList.remove('hide');
-    modal.classList.add('show');
-});
+// btn.addEventListener('click', () => {
+//     modal.classList.remove('hide');
+//     modal.classList.add('show');
+// });
 
-close.addEventListener('click', () => {
-    modal.classList.remove('show');
-    modal.classList.add('hide');
-})
+// close.addEventListener('click', () => {
+//     modal.classList.remove('show');
+//     modal.classList.add('hide');
+// })
 
-modal.addEventListener('click', (event) => {
-    if (event.target.classList.contains('modal')) {
-        modal.classList.remove('show');
-        modal.classList.add('hide');
-    }
-})
+// modal.addEventListener('click', (event) => {
+//     if (event.target.classList.contains('modal')) {
+//         modal.classList.remove('show');
+//         modal.classList.add('hide');
+//     }
+// })
